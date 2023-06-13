@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    #divpadre{
+    background-color: transparent;
+    margin: auto;
+    height: 1000px;
+    width: auto;
+    
+    }
+
+    .dt{
+    background-color: transparent;
+    border-color: transparent;
+    }
+
+    div#pokemon1{
+    position: absolute; top: 770px; left: 200px;
+    }
+
+    div#pokemon2{
+    position: absolute; top: 700px; left: 1370px;
+    }
+
+    div#pokemon3{
+    position: absolute; top: 500px; left: 600px;
+    }
+
+    div#pokemon4{
+    position: absolute; top: 830px; left: 600px;
+    }
+
+    div#pokemon5{
+    position: absolute; top: 620px; left: 1000px;
+    }
+
+    div#titulo{
+    position: absolute; top: 30px; left: 650px;
+    }
+
+    #imgpokemon1{
+        height: 200px;
+    }
+    #imgpokemon2{
+        height: 300px;
+    }
+    #imgpokemon3{
+        height: 250px;
+    }
+    #imgpokemon4{
+        height: 120px;
+    }
+    #imgpokemon5{
+        height: 250px;
+    }
+    #titulo{
+        height: 400px;
+    }
+
+    </style>
+</head>
+
+<script type="application/javascript">
+    let pokemon = new Pokemon();
+    function eleccion(){
+        location.href = "arena1.html"
+        let batalla = new Batalla()
+        batalla.mostrarPokemonRandom()
+    }
+
+    function eleccion2(){
+        location.href = "arena2.html"
+    }
+
+    function eleccion3(){
+        location.href = "arena3.html"
+    }
+
+    function eleccion4(){
+        location.href = "arena4.html"
+    }
+
+    function eleccion5(){
+        location.href = "arena5.html"
+    }
+
+    // -- evento click en clase personas
+    document.addEventListener("click", function (event) {
+        if (event.target.classList.contains("personas")) {
+            alert("Hola")
+        }
+    })
+
+</script>
+
+<body background="asets/img/fondo.png">
+
+<div id="divpadre">
+    <div id="pokemon1">
+    <button onclick="eleccion()" type="button"  class="dt">
+    <img id="imgpokemon1" src="asets/img/pokemon1.gif">
+    </button>
+    </div>
+
+    <div id="pokemon2">
+    <button onclick="eleccion2()"type="button"  class="dt">
+    <img id="imgpokemon2" src="asets/img/pokemon2.gif">
+    </button>r
+    </div>
+
+    <div id="pokemon3">
+    <button onclick="eleccion3()" type="button"  class="dt">
+    <img id="imgpokemon3" src="asets/img/pokemon3.gif">
+    </button>
+    </div>
+
+    <div id="pokemon4">
+    <button onclick="eleccion4()" type="button"  class="dt">
+    <img id="imgpokemon4" src="asets/img/pokemon4.gif">
+    </button>
+    </div>
+
+    <div id="pokemon5">
+    <button onclick="eleccion5()" type="button"  class="dt">
+    <img id="imgpokemon5" src="asets/img/pokemon5.gif">
+    </button>
+    </div>
+
+    <div id="titulo">
+    <button type="button"  class="dt">
+    <img id="titulo" src="asets/img/title.png">
+    </button>
+    </div>
+</div>
+</body>
+</html>

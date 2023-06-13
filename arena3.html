@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    #divpadre{
+    background-color: transparent;
+    margin: auto;
+    height: 1000px;
+    width: auto;
+    
+    }
+
+    .dt{
+    background-color: transparent;
+    border-color: transparent;
+    }
+
+    div#pokemon3{
+    position: absolute; top: 460px; left: 580px;
+    transform: scaleX(-1);
+    }
+
+    div#pokemon4{
+    position: absolute; top: 590px; left: 1170px;
+    }
+
+
+
+    #imgpokemon3{
+        height: 250px;
+    }
+    #imgpokemon4{
+        height: 100px;
+    }
+
+
+    </style>
+</head>
+
+<body background="asets/img/campo.png">
+
+<div id="divpadre">
+    <div id="pokemon3">
+    <button type="button"  class="dt">
+    <img id="imgpokemon3" src="asets/img/pokemon3.gif">
+    </button>
+    </div>
+
+    <div id="pokemon4">
+    <button type="button"  class="dt">
+    <img id="imgpokemon4" src="asets/img/pokemon4.gif">
+    </button>
+    </div>
+
+</div>
+</body>
+
+<script type="application/javascript">
+
+    // -- evento click en clase personas
+    document.addEventListener("click", function (event) {
+        if (event.target.classList.contains("personas")) {
+            alert("Hola")
+        }
+    })
+
+</script>
+</html>

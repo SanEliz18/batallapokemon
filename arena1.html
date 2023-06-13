@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    #divpadre{
+    background-color: transparent;
+    margin: auto;
+    height: 1000px;
+    width: auto;
+    
+    }
+
+    .dt{
+    background-color: transparent;
+    border-color: transparent;
+    }
+
+    div#pokemon1{
+    position: absolute; top: 530px; left: 520px;
+    transform: scaleX(-1);
+    }
+
+    div#pokemon2{
+    position: absolute; top: 440px; left: 1170px;
+    }
+
+
+
+    #imgpokemon1{
+        height: 200px;
+    }
+    #imgpokemon2{
+        height: 300px;
+    }
+
+
+    </style>
+</head>
+
+<body background="asets/img/campo.png">
+
+<div id="divpadre">
+    <div id="pokemon1">
+    <button type="button"  class="dt">
+    <img id="imgpokemon1" src="asets/img/pokemon1.gif">
+    </button>
+    </div>
+
+    <div id="pokemon2">
+    <button type="button"  class="dt">
+    <img id="imgpokemon2" src="asets/img/pokemon2.gif">
+    </button>
+    </div>
+
+</div>
+</body>
+<script src="batalla.js"></script>
+<script type="application/javascript">
+
+    // -- evento click en clase personas
+    document.addEventListener("click", function (event) {
+        if (event.target.classList.contains("personas")) {
+            alert("Hola")
+        }
+    })
+
+</script>
+</html>
