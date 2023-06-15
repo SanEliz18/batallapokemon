@@ -41,7 +41,37 @@
     #imgpokemon2{
         height: 200px;
     }
-
+    .cont{
+        position: absolute; top: 405px; left: 1220px;
+        border-radius: 6px;
+        background-color: wheat;
+        margin: auto;
+        height: 60px;
+        width: 80px; 
+    }
+    .cont2{
+        position: absolute; top: 405px; left: 650px;
+        border-radius: 6px;
+        background-color: wheat;
+        margin: auto;
+        height: 60px;
+        width: 80px; 
+    }
+    .ataque1{
+        position: absolute; top: 855px; left: 340px;
+        height: 80px;
+        width: 150px;
+    }
+    .ataque2{
+        position: absolute; top: 855px; left: 540px;
+        height: 80px;
+        width: 150px;
+    }
+    .ataque3{
+        position: absolute; top:855px; left: 740px;
+        height: 80px;
+        width: 150px;
+    }
 
     </style>
 </head>
@@ -49,12 +79,22 @@
 <body background="asets/img/campo.png" onload="seleccionarPokemonAleatorio()">
 
 <div id="divpadre">
+    <div class="cont">
+        <center><label id="contador" style="font-size: 50px;"></label></center>
+    </div>
     <div id="pokemon1">
     <button type="button"  class="dt">
     <img id="imgpokemon1" src="asets/img/pokemon1.gif">
     </button>
+    <br><br><br>
     </div>
+    <button class="ataque1" onclick="causarDaño()">Ataque 1</button>
+    <button class="ataque2" onclick="causarDaño2()">Ataque 2</button>
+    <button class="ataque3" onclick="causarDaño3()">Ataque 3</button>
 
+    <div class="cont2">
+        <center><label id="contador2" style="font-size: 50px;"></label></center>
+    </div>
     <div id="pokemon2">
     <button type="button"  class="dt">
     <img id="imgpokemon2" src="asets/img/pokemon2.gif">
@@ -64,6 +104,7 @@
 </div>
 </body>
 
+<script type="application/javascript" src="pokemon.js"></script>
 <script type="application/javascript">
 
 function seleccionarPokemonAleatorio() {
@@ -78,6 +119,23 @@ function seleccionarPokemonAleatorio() {
         let imagenPokemon = document.getElementById("imgpokemon2");
         imagenPokemon.src = pokemonArray[indiceAleatorio];
     }
+    let pokemon = new Pokemon()
+    document.getElementById('contador').innerHTML = pokemon.vida1 
+    document.getElementById('contador2').innerHTML = pokemon.vida2
+    
+    function causarDaño(){
+        pokemon.contadorVida1()
+        document.getElementById('contador').innerHTML = pokemon.vida1
+    }
 
+    function causarDaño2(){
+        pokemon.contadorVida2()
+        document.getElementById('contador').innerHTML = pokemon.vida1
+    }
+
+    function causarDaño3(){
+        pokemon.contadorVida3()
+        document.getElementById('contador').innerHTML = pokemon.vida1
+    }
 </script>
 </html>
