@@ -102,20 +102,15 @@
 </body>
 
 <script type="application/javascript" src="pokemon.js"></script>
+<script type="application/javascript" src="arena.js"></script>
 <script type="application/javascript">
-function seleccionarPokemonAleatorio() {
-        let pokemonArray = [
-            "asets/img/pokemon1.gif",
-            "asets/img/pokemon2.gif",
-            "asets/img/pokemon3.gif",
-            "asets/img/pokemon4.gif",
-            "asets/img/pokemon5.gif"
-        ];
-        let indiceAleatorio = Math.floor(Math.random() * pokemonArray.length);
-        let imagenPokemon = document.getElementById("imgpokemon3");
-        imagenPokemon.src = pokemonArray[indiceAleatorio];
-    }
+
     let pokemon = new Pokemon()
+    
+    let arena = new Arena()
+    function seleccionarPokemonAleatorio() {
+        arena.seleccionarPokemonAleatorio()
+    }
     document.getElementById('contador').innerHTML = pokemon.vida1 
     document.getElementById('contador2').innerHTML = pokemon.vida2
     
