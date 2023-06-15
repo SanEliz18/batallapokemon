@@ -10,5 +10,4 @@ class pokemon{
         this.vida = vida
         this.ataque = ataque
     }
-    
 }

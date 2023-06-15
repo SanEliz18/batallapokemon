@@ -46,12 +46,12 @@
     </style>
 </head>
 
-<body background="asets/img/campo.png">
+<body background="asets/img/campo.png" onload="seleccionarPokemonAleatorio()">
 
 <div id="divpadre">
     <div id="pokemon1">
     <button type="button"  class="dt">
-    <img id="imgpokemon1" src="asets/img/pokemon1.gif">
+    <img id="imgpokemon1" src="asets/img/pokemon5.gif">
     </button>
     </div>
 
@@ -66,12 +66,18 @@
 
 <script type="application/javascript">
 
-    // -- evento click en clase personas
-    document.addEventListener("click", function (event) {
-        if (event.target.classList.contains("personas")) {
-            alert("Hola")
-        }
-    })
+function seleccionarPokemonAleatorio() {
+        let pokemonArray = [
+            "asets/img/pokemon1.gif",
+            "asets/img/pokemon2.gif",
+            "asets/img/pokemon3.gif",
+            "asets/img/pokemon4.gif",
+            "asets/img/pokemon5.gif"
+        ];
+        let indiceAleatorio = Math.floor(Math.random() * pokemonArray.length);
+        let imagenPokemon = document.getElementById("imgpokemon3");
+        imagenPokemon.src = pokemonArray[indiceAleatorio];
+    }
 
 </script>
 </html>
