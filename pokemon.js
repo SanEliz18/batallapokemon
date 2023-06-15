@@ -23,15 +23,20 @@ class Pokemon{
     }
     contadorVida2()
     {
-        if(this.vida1 != 0){
+        if(this.vida1 != 0 && this.vida1 > this.daño_ataque2){
                 this.vida1 = this.vida1 - this.daño_ataque2
-            if(this.vida1 < 15){
-                this.vida1 = this.vida1 - this.vida1
-            }
         }
-
+        else if(this.vida1 < this.daño_ataque2 && this.vida1 > 0)
+        {
+            return this.vida1 = this.vida1 - this.vida1
+        }
+        
         else
-        alert("GAME OVER")
+        {
+            this.vida
+            alert("GAME OVER")
+            window.location.href="index.html"
+        }
     }
     contadorVida3()
     {
