@@ -16,11 +16,20 @@ class Pokemon{
 
     contadorVida1()
     {
-        if(this.vida1 != 0){
+        if(this.vida1 != 0 && this.vida1 > this.daño_ataque1){
             this.vida1 = this.vida1 - this.daño_ataque1
-        }
-        else
-            alert("GAME OVER")
+    }
+    else if(this.vida1 < this.daño_ataque1 && this.vida1 > 0)
+    {
+        return this.vida1 = this.vida1 - this.vida1
+    }
+    
+    else
+    {
+        this.vida
+        alert("GAME OVER")
+        window.location.href="index.html"
+    }
     }
     contadorVida2()
     {
@@ -41,11 +50,20 @@ class Pokemon{
     }
     contadorVida3()
     {
-        if(this.vida1 != 0)
-        this.vida1 = this.vida1 - this.daño_ataque3
-
-        else
+        if(this.vida1 != 0 && this.vida1 > this.daño_ataque3){
+            this.vida1 = this.vida1 - this.daño_ataque3
+    }
+    else if(this.vida1 < this.daño_ataque3 && this.vida1 > 0)
+    {
+        return this.vida1 = this.vida1 - this.vida1
+    }
+    
+    else
+    {
+        this.vida
         alert("GAME OVER")
+        window.location.href="index.html"
+    }
     }
     
     daño_Contrincante(){
