@@ -1,5 +1,4 @@
 class Arena{
-    numero = 0
 
     seleccionarPokemonAleatorio() {
         var pokemonArray = [

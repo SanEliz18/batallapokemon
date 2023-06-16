@@ -1,0 +1,161 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#divpadre{
+background-color: transparent;
+margin: auto;
+height: 1000px;
+width: auto;
+
+}
+
+.dt{
+background-color: transparent;
+border-color: transparent;
+}
+
+div#pokemon1{
+position: absolute; top: 530px; left: 520px;
+transform: scaleX(-1);
+}
+
+div#pokemon2{
+position: absolute; top: 540px; left: 1170px;
+}
+
+
+#imgpokemon1{
+    height: 200px;
+}
+#imgpokemon2{
+    height: 200px;
+}
+.cont{
+    position: absolute; top: 405px; left: 1200px;
+    border-radius: 6px;
+    background-color: transparent;
+    margin: auto;
+    height: 30px;
+    width: 80px;
+}
+
+#contador{
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    position: absolute; top: 52px; left: 50px;
+    font-family:fantasy;
+    font-size: 28px;
+    font-style: italic;
+    z-index: 1;
+}
+
+.cont2{
+    position: absolute; top: 457px; left: 615px;
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    font-family:fantasy;
+    font-size: 28px;
+    font-style: italic;
+    z-index: 1;
+}
+
+.ataque1{
+    background-color: transparent;
+    border-color: transparent;
+    position: absolute; top: 855px; left: 200px;
+    height: 50px;
+    width: 200px;
+    z-index: 1;
+    color: white;
+    font-family:fantasy;
+    font-size: 30px;
+    font-style: italic;
+}
+.ataque2{
+    background-color: transparent;
+    border-color: transparent;
+    position: absolute; top: 855px; left: 440px;
+    height: 50px;
+    width: 200px;
+    z-index: 1;
+    color: white;
+    font-family:fantasy;
+    font-size: 30px;
+    font-style: italic;
+}
+.ataque3{
+    background-color: transparent;
+    border-color: transparent;
+    position: absolute; top: 855px; left: 678px;
+    height: 50px;
+    width: 200px;
+    z-index: 1;
+    color: white;
+    font-family:fantasy;
+    font-size: 30px;
+    font-style: italic;
+}
+
+#fire6{
+    position: absolute; top:730px; left: 180px;
+    width: 130px;
+
+}
+
+#fire4{
+    position: absolute; top:730px; left: 420px;
+    width: 130px;
+
+}
+
+#fire7{
+    position: absolute; top:730px; left: 660px;
+    width: 130px;
+
+}
+
+#barra{
+    position: absolute; top:410px; left: 440px;
+    width: 350px;
+}
+
+#barra2{
+    position: absolute; top:410px; left: 1120px;
+    width: 350px;
+    transform: scaleX(-1);
+}
+
+#botonataque1{
+    position: absolute; top:-17px; left: -22px;
+    z-index: -1;
+}
+
+#botonataque2{
+    position: absolute; top:-17px; left: -22px;
+    z-index: -1;
+}
+
+#botonataque3{
+    position: absolute; top:-17px; left: -22px;
+    z-index: -1;
+}
+
+#entrenador1{
+    position: absolute; top: 470px; left: 220px;
+    width: 130px;
+}
+
+#entrenador2{
+    position: absolute; top: 470px; left: 1555px;
+    width: 140px;
+}
+
+#titlepokemon{
+    position: absolute; top: 45px; left: 700px;
+    width: 00px;
+}
+

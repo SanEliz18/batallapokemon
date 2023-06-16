@@ -8,6 +8,7 @@ class Pokemon{
     daño_ataque2 = 15
     daño_ataque3 = 10
     ataque_contrincante = [this.daño_ataque1,this.daño_ataque2,this.daño_ataque3]
+
     constructor(nombre,elemento,ataque){
         this.nombre = nombre
         this.elemento = elemento
@@ -23,13 +24,13 @@ class Pokemon{
     {
         return this.vida1 = this.vida1 - this.vida1
     }
-    
     else
     {
         this.vida
         alert("GAME OVER")
         window.location.href="index.html"
     }
+
     }
     contadorVida2()
     {
@@ -57,7 +58,6 @@ class Pokemon{
     {
         return this.vida1 = this.vida1 - this.vida1
     }
-    
     else
     {
         this.vida
@@ -65,9 +65,8 @@ class Pokemon{
         window.location.href="index.html"
     }
     }
-    
     daño_Contrincante(){
-        var ataqueAleatorio = Math.floor(Math.random() * this.ataque_contrincante.length)
+        let ataqueAleatorio = Math.floor(Math.random() * this.ataque_contrincante.length)
         this.vida2 = this.vida2 - this.ataque_contrincante[ataqueAleatorio]
     }
 }
