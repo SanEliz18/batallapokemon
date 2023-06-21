@@ -120,16 +120,31 @@
     function causarDaño(){
         pokemon.contadorVida1()
         document.getElementById('contador').innerHTML = pokemon.vida1
+        document.getElementById('botonataque1').disabled = false
+        setTimeout(function(){  
+            pokemon.daño_Contrincante() 
+            document.getElementById('contador2').innerHTML = pokemon.vida2
+        }, 850)   
     }
 
     function causarDaño2(){
         pokemon.contadorVida2()
         document.getElementById('contador').innerHTML = pokemon.vida1
+        document.getElementById('botonataque1').disabled = false
+        setTimeout(function(){  
+            pokemon.daño_Contrincante() 
+            document.getElementById('contador2').innerHTML = pokemon.vida2
+        }, 850)   
     }
 
     function causarDaño3(){
         pokemon.contadorVida3()
         document.getElementById('contador').innerHTML = pokemon.vida1
+        document.getElementById('botonataque1').disabled = false
+        setTimeout(function(){  
+            pokemon.daño_Contrincante() 
+            document.getElementById('contador2').innerHTML = pokemon.vida2
+        }, 850)   
     }
 
 </script>

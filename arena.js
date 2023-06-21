@@ -12,4 +12,6 @@ class Arena{
         var imagenPokemon = document.getElementById("imgpokemon2");
         imagenPokemon.src = pokemonArray[indiceAleatorio];
     }
+
+    
 }
